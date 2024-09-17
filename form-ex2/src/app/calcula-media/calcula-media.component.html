@@ -1,0 +1,20 @@
+<div>
+    <label for="ac1">AC1:</label>
+    <input type="number" [(ngModel)]="ac1">
+  
+    <label for="ac2">AC2:</label>
+    <input type="number" [(ngModel)]="ac2">
+  
+    <label for="ag">AG:</label>
+    <input type="number" [(ngModel)]="ag">
+  
+    <label for="af">AF:</label>
+    <input type="number" [(ngModel)]="af">
+  
+    <button (click)="calcularMedia()">Calcular</button>
+  
+    <div *ngIf="resultado !== null">
+      <p>Média Final: {{mediaFinal}}</p>
+      <p>Status: {{resultado}}</p>
+    </div>
+  </div>
